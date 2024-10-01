@@ -42,7 +42,7 @@ include-googleapi.php
 #
 # Note: If you wish to whitelist plugins,
 # uncomment the next line
-/wp-content/plugins
+/wp-content/plugins/w3-total-cache
 /wp-content/wflogs
 
 # All themes
