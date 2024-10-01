@@ -1,0 +1,90 @@
+.news-carousel {
+  display: flex;
+
+  li {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+}
+
+.bx-viewport {
+  @include rems(padding, 1);
+  @include rems(margin, -1);
+
+  @media #{$phone} {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.carousel-container {
+  position: relative;
+
+  .bx-next,
+  .bx-prev {
+		position: absolute;
+		top: 50%;
+		@include box;
+		@include rems(padding, 1);
+		color: #fff;
+		background: $primary;
+		@include font-size(2.4, 2.4);
+		text-align: center;
+		@include rems(width, 4.6);
+		transform: translateY(-50%);
+    @include border-radius(50%);
+
+    &.disabled {
+      @include opacity(0.2);
+      cursor: default;
+    }
+
+		@media #{$phone} {
+			display: none;
+		}
+	}
+
+	.bx-prev {
+    right: calc(100% + 20px);
+    right: calc(100% + 2rem);
+	}
+
+	.bx-next {
+    left: calc(100% + 20px);
+    left: calc(100% + 2rem);
+	}
+
+	.bx-pager {
+    @include rems(margin-top, 2);
+		text-align: center;
+    line-height: 0;
+
+		.bx-pager-item {
+			display: inline-block;
+			background: rgba(255, 255, 255, 0.25);
+			@include rems(padding, 0.3);
+			&:first-child {
+				@include border-radius(9px 0 0 9px);
+				@include rems(padding, 0.3, 0.3, 0.3, 1);
+			}
+			&:last-child {
+				@include border-radius(0 9px 9px 0);
+				@include rems(padding, 0.3, 1, 0.3, 0.3);
+			}
+			a {
+				display: block;
+				@include rems(height, 1);
+				@include rems(width, 1);
+				text-indent: -10000px;
+				border: 2px solid #333;
+				@include border-radius(50%);
+				@include box;
+				&.active {
+					background: #333;
+				}
+			}
+		}
+	}
+}

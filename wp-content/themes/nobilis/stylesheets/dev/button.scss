@@ -1,0 +1,65 @@
+.button {
+  background: none;
+  @include rems(padding, 1, 4);
+  font-family: $bold;
+  @include border-radius(30px);
+  transition: 0.4s all ease;
+  text-decoration: none;
+  display: inline-block;
+  @include box;
+  text-align: center;
+
+  &.small {
+    @include rems(padding, 0.5, 2);
+  }
+
+  &.large {
+    @include font-size(2.4, 3.2);
+  }
+
+  &.primary {
+    border: 2px solid $primary;
+    color: $primary;
+
+    &.solid,
+    &:hover {
+      background: $primary;
+      color: #fff;
+    }
+
+    &.solid {
+      -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+              box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+
+      &:hover {
+        background: #fff;
+        color: $primary;
+        box-shadow: none;
+        border: 2px solid #fff;
+      }
+    }
+  }
+
+  &.secondary {
+    border: 2px solid #fff;
+    color: #fff;
+
+    &.solid,
+    &:hover {
+      background: #fff;
+      color: $primary;
+    }
+
+    &.solid {
+      -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+              box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+
+      &:hover {
+        background: $primary;
+        color: #fff;
+        box-shadow: none;
+        border: 2px solid $primary;
+      }
+    }
+  }
+}

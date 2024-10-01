@@ -1,0 +1,224 @@
+.primary-nav {
+  display: flex;
+  margin-left: auto;
+
+  @media #{$phone} {
+    display: none;
+  }
+
+  & > ul {
+    display: flex;
+
+    & > li {
+      display: flex;
+      align-items: center;
+      background: none;
+      padding: 0;
+      margin: 0;
+
+      & > a {
+        display: block;
+        @include rems(padding, 1);
+        @include font-size(2, 2.8);
+        font-family: $bold;
+        text-decoration: none;
+
+        &.careers-link {
+          @include rems(padding-left, 2);
+          padding-right: 0;
+
+          span {
+            display: block;
+            @include rems(height, 3);
+            @include rems(width, 17);
+            @include box;
+            background: url('images/jobs-logo-white@2x.png') right center no-repeat;
+            @include rems(padding-left, 4);
+            background-size: contain;
+            text-indent: -10000px;
+            transition: 0.4s all ease;
+          }
+        }
+      }
+
+      &:hover {
+        .subnav {
+          opacity: 1;
+          transform: translateY(1px);
+          pointer-events: auto;
+        }
+      }
+    }
+  }
+}
+
+.subnav {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: 0.4s all ease;
+  pointer-events: none;
+  border-bottom: 1px solid $primary;
+
+  .container {
+    display: flex;
+  }
+
+  .subnav-sidebar {
+    border-right: 1px solid #ccc;
+    @include rems(padding-right, 4);
+    @include rems(width, 25);
+    flex-shrink: 0;
+  }
+
+  .subnav-main {
+    @include rems(padding-left, 4);
+    display: flex;
+    flex-grow: 1;
+
+    h3 {
+      color: $secondary;
+      font-family: $bold;
+
+      a {
+        color: $secondary;
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  .care-column {
+    @include rowMachine(4, 2%);
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-nav {
+  ul {
+    @include font-size(2.4, 3.2);
+
+    @media #{$phone} {
+      @include font-size(1.6, 2.4);
+    }
+
+    li {
+      padding: 0;
+      @include rems(margin-bottom, 1);
+      background: none;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  display: none;
+
+  @media #{$phone} {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    overflow: auto;
+    width: calc(100% - 80px);
+    width: calc(100% - 8rem);
+    background: #fff;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    z-index: 30;
+    transition: 0.4s all ease;
+
+    &.active {
+      @include rems(left, 8);
+    }
+  }
+
+  li {
+		border-bottom: 1px solid #ccc;
+    padding: 0;
+    background: none;
+    margin: 0;
+
+		a {
+			display: block;
+			@include rems(padding, 1, 2);
+			text-decoration: none;
+    }
+
+    &.menu-item-has-children {
+      @include angle-down;
+
+      &::before {
+        float: right;
+        color: $primary;
+        @include font-size(2, 2.4);
+        @include rems(padding, 1, 2);
+      }
+    }
+
+    ul {
+      display: none;
+
+      li {
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      a {
+        @include rems(padding-left, 4);
+      }
+    }
+  }
+}
+
+.mobile-nav-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+}
+
+.mobile-nav-trigger {
+  display: none;
+
+  @media #{$phone} {
+    display: block;
+    @include font-size(3, 3);
+    margin-left: auto;
+    color: $primary;
+  }
+}
+
+.mobile-nav-close {
+  display: none;
+
+  @media #{$phone} {
+    @include font-size(4, 4);
+    margin-left: auto;
+    color: #fff;
+    position: fixed;
+    z-index: 30;
+    @include rems(top, 2);
+    @include rems(left, 2);
+  }
+}

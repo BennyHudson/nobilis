@@ -1,0 +1,246 @@
+.blog-main {
+  .container {
+    display: flex;
+  }
+}
+
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .blog-main & {
+    @include rems(margin-top, -8);
+    position: relative;
+    z-index: 1;
+    width: calc(80% - 4rem);
+    @include rems(margin-right, 4);
+
+    @media #{$phone} {
+      width: 100%;
+      margin-right: 0;
+      @include rems(margin-top, -4);
+    }
+  }
+
+  .blog-card {
+    @include rowMachine(3, 2%);
+
+    @media #{$phone} {
+      @include rowMachine(1, 2%);
+    }
+  }
+}
+
+.blog-card {
+  @include border-radius(4px);
+  overflow: hidden;
+  transition: 0.4s all ease;
+
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+          box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  img {
+    display: block;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  .card-body {
+    @include rems(padding, 2);
+
+    .excerpt-clip {
+      @include rems(height, 9.6);
+      overflow: hidden;
+      @include rems(margin-bottom, 2);
+    }
+
+    .read-more {
+      text-decoration: underline;
+    }
+  }
+}
+
+.blog-sidebar {
+  width: 20%;
+  @include rems(padding-top, 4);
+
+  @media #{$phone} {
+    display: none;
+  }
+}
+
+.widget {
+  @include rems(margin-bottom, 4);
+
+  h3 {
+    font-family: $bold;
+    border-bottom: 1px solid #ccc;
+    color: $primary;
+  }
+
+  ul {
+    li {
+      @include rems(margin-bottom, 1);
+      background: none;
+      padding-left: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  dl {
+    dt {
+      font-family: $bold;
+    }
+
+    dd {
+      @include rems(margin-bottom, 1);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pagination {
+  @include rems(margin-top, 4);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: flex;
+
+    li {
+      @include rems(margin-right, 1);
+      background: none;
+      padding: 0;
+      margin-bottom: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        display: block;
+        @include rems(padding, 1);
+        background: #fff;
+        font-family: $bold;
+        @include rems(min-width, 4);
+        @include box;
+        @include border-radius(4px);
+        text-align: center;
+        transition: 0.4s all ease;
+        text-decoration: none;
+      }
+
+      &:hover,
+      &.active {
+        a {
+          background: $primary;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.post-nav {
+  @include rems(margin-top, 4);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  & > *:last-child {
+    margin-left: auto;
+  }
+}
+
+article {
+  @include border-radius(4px);
+  @include rems(padding, 8);
+  overflow: hidden;
+
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+          box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+
+  &.error-page {
+    @include rems(margin-top, 8);
+  }
+
+  @media #{$phone} {
+    @include rems(padding, 2);
+  }
+
+  .post-meta {
+    @include rems(padding, 1, 0);
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    @include rems(margin-bottom, 2);
+
+    a {
+      text-decoration: none;
+    }
+
+    span {
+      display: inline-block;
+      @include rems(margin-right, 2);
+
+      i {
+        color: $primary;
+      }
+
+      em {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+span.category {
+  @include rems(padding, 0.5, 2);
+  color: #fff;
+  display: block;
+  font-family: $bold;
+
+  &-business-news {
+    background: $tertiary;
+  }
+
+  &-expert-information {
+    background: $primary;
+  }
+
+  &-staff-stories {
+    background: $secondary;
+  }
+
+  article & {
+    @include rems(margin, -8, -8, 4);
+    @include rems(padding, 1, 8);
+  }
+}

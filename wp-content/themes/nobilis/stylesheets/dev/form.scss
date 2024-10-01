@@ -1,0 +1,195 @@
+.form-split {
+  display: flex;
+  flex-wrap: wrap;
+  @include rems(margin, -1, -1, 1);
+
+	& > div {
+		width: calc(50% - 20px);
+    width: calc(50% - 2rem);
+    @include rems(margin, 1);
+		padding: 0!important;
+
+		input[type=email], input[type=text], input[type=tel], textarea {
+			margin-bottom: 0;
+		}
+
+    @media #{$phone} {
+      width: 100%;
+    }
+	}
+}
+
+fieldset {
+	border: none;
+}
+
+input[type=email],
+input[type=text],
+input[type=tel],
+input[type=password],
+input[type=number],
+textarea {
+  @include box;
+	@include rems(padding, 1, 2, 0.8);
+  @include font-size(2, 2.8);
+  @include border-radius(40px);
+  @include rems(margin-bottom, 2);
+
+  font-family: 'Metropolis Regular';
+  color: $body;
+	width: 100%;
+	outline: none;
+  border: 1px solid #ccc;
+
+  -webkit-appearance: none;
+  transition: 0.4s all ease;
+
+  &:focus {
+    border: 1px solid $primary;
+  }
+}
+
+textarea {
+  @include border-radius(16px);
+}
+
+input[type="submit"] {
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+	@include border-radius(40px);
+	-webkit-appearance: none;
+
+	// Custom Styles
+	background: $secondary;
+	color: #fff;
+	@include rems(padding, 1, 2, 0.8);
+	border: none;
+	font-family: $bold;
+	@include font-size(2, 2.8);
+  transition: 0.4s all ease;
+
+  @media #{$phone} {
+    width: 100%;
+  }
+
+  &:hover {
+    background: $primary;
+  }
+}
+
+select {
+	background-image: url('images/select@2x.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 45px auto;
+	background-size: 4.5rem auto;
+	@include rems(padding, 1, 5.2, 1, 1);
+	width: 100%;
+	@include box;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	border-radius: 0;
+	margin-bottom: 2%;
+	outline: none;
+
+	// Custom Styles
+
+	background-color: #e1e1e1;
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(1.6, 2.2);
+	border: 1px solid #e1e1e1;
+	color: #333;
+}
+select::-ms-expand {
+    display: none;
+}
+form {
+	@include clearfix;
+	input[type="submit"] {
+		float: right;
+	}
+	p {
+		padding-bottom: 0;
+	}
+	br {
+		display: none;
+	}
+}
+
+.quick-contact {
+  @include rems(padding, 2, 0);
+
+  .page-template-template-landing & {
+    @media #{$phone} {
+      background: $primary;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+
+    @media #{$phone} {
+      flex-wrap: wrap !important;
+    }
+  }
+
+  .quick-contact-heading {
+    @include font-size(3.2, 4);
+    flex-shrink: 0;
+    font-family: $bold;
+
+    @media #{$phone} {
+      @include font-size(2.4, 3.2);
+      @include rems(margin-bottom, 1);
+
+      .page-template-template-landing & {
+        color: #fff;
+      }
+    }
+  }
+
+  span {
+    @include rems(margin-right, 2);
+
+    @media #{$phone} {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+
+    @media #{$phone} {
+      flex-wrap: wrap;
+    }
+
+    .wpcf7-form-control-wrap {
+      width: 100%;
+
+      @media #{$phone} {
+        @include rems(margin-bottom, 1);
+      }
+
+      &.your-postcode {
+        width: 50%;
+
+        @media #{$phone} {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  input {
+    margin-bottom: 0;
+  }
+}

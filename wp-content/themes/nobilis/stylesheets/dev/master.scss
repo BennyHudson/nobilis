@@ -1,0 +1,40 @@
+/*!
+Theme Name: Nobilis
+Theme URI: http://wedo.digital
+Author: wedo.digital
+Author URI: http://wedo.digital
+Description: A boilerplate theme for wedo.digital Clients
+Version: 1.0
+*/
+
+/* Essentials */
+
+@import 'fonts';
+@import 'colours';
+@import 'highlight';
+@import 'mixins';
+@import 'media';
+@import 'reset';
+@import 'global';
+@import 'typography';
+
+/* Page Elements */
+
+@import 'header';
+@import 'footer';
+@import 'nav';
+@import 'form';
+@import 'validation';
+@import 'button';
+@import 'advert';
+@import 'feature';
+@import 'page';
+@import 'carousel';
+@import 'overlay';
+
+/* Page Specifics */
+
+@import 'landing';
+@import 'care-page';
+@import 'areas';
+@import 'blog';

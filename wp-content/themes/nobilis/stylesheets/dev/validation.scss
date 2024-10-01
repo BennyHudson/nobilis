@@ -1,0 +1,55 @@
+.wpcf7-form-control-wrap {
+	position: relative;
+	display: block;
+	span {
+		&.wpcf7-not-valid-tip {
+			font-family: $bold;
+			color: #ed1c24;
+			display: block;
+			@include rems(padding, 1);
+			@include rems(margin-bottom, 1);
+			border: 1px solid #ed1c24;
+			border-top: none;
+			&:before {
+				@include icon('\f057');
+				float: right;
+				color: #ed1c24;
+				@include font-size(2, 2);
+			}
+		}
+	}
+	input.wpcf7-not-valid {
+		margin-bottom: 0;
+		border: 1px solid #ed1c24;
+		border-bottom: none;
+	}
+}
+.wedo {
+	div.wpcf7-response-output {
+		clear: both;
+		@include rems(margin, 2, 0, 0);
+		@include rems(padding, 1, 2);
+		@include border-radius(10px);
+		font-family: $bold;
+		&:before {
+			@include font-size(2, 2);
+			@include rems(margin-right, 1);
+		}
+		&.wpcf7-validation-errors {
+			border: 2px solid #ed1c24;
+			color: #ed1c24;
+			background: rgba(236, 26, 41, 0.2);
+			&:before {
+				@include icon('\f057');
+			}
+		}
+		&.wpcf7-mail-sent-ok {
+			color: #00a453;
+			border: 2px solid #00a453;
+			background: rgba(57, 143, 20, 0.2);
+			&:before {
+				@include icon('\f058');
+			}
+		}
+	}
+}

@@ -1,0 +1,136 @@
+[05-Mar-2021 16:36:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[14-Mar-2021 11:21:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[26-Mar-2021 19:30:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[10-Apr-2021 12:51:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[14-Apr-2021 22:54:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[11-May-2021 06:00:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[14-May-2021 23:43:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[15-May-2021 23:03:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[23-May-2021 18:09:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[17-Jun-2021 01:51:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[25-Sep-2021 20:31:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/404.php on line 1
+[09-Nov-2021 01:45:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[09-Nov-2021 01:45:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function language_attributes() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/header.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/header.php on line 2
+[09-Nov-2021 01:45:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/404.php on line 1
+[28-Nov-2021 14:12:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[28-Nov-2021 14:12:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function language_attributes() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/header.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/header.php on line 2
+[28-Nov-2021 14:12:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/404.php on line 1
+[10-Dec-2021 12:56:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[13-Dec-2021 05:40:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[15-Jul-2022 22:34:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[16-Jul-2022 08:40:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[26-Jul-2022 20:17:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[26-Jul-2022 20:18:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[25-Aug-2022 20:21:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[25-Aug-2022 20:27:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[25-Aug-2022 21:01:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[02-Dec-2022 14:18:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[02-Dec-2022 19:27:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[02-Dec-2022 19:27:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[14-Mar-2023 00:38:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_front_page() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/footer.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/footer.php on line 2
+[14-Mar-2023 00:38:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/404.php on line 1
+[14-Mar-2023 00:38:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[24-Mar-2023 17:14:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6
+[21-Apr-2023 13:43:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_posts() in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fqs7gufu6mnp/public_html/wp-content/themes/nobilis/index.php on line 6

@@ -1,0 +1,62 @@
+html {
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased !important;
+	@media #{$tablet} {
+		font-size: 50%;
+	}
+	@media #{$phone} {
+		font-size: 62.5%;
+	}
+}
+html, body {
+	height: 100%;
+}
+* {
+	margin:0;
+	padding:0;
+}
+ol,ul {
+	list-style:none;
+}
+img {
+	border: none;
+	//width: auto;
+	max-width: 100%;
+	height: auto;
+}
+.clear {
+	clear: both;
+}
+.col, aside {
+	float: left;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-style: normal;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}

@@ -1,0 +1,112 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid $primary;
+}
+
+.footer-main {
+  background: #250132;
+
+  .container {
+    display: flex;
+
+    @media #{$phone} {
+      flex-direction: column;
+    }
+  }
+
+  .footer-column {
+    @include rems(padding-right, 4);
+    @include rems(margin-right, 4);
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-right: 1px solid #fff;
+    align-items: center;
+
+    @media #{$phone} {
+      border-right: none;
+      border-bottom: 1px solid #fff;
+      padding: 0;
+      @include rems(margin, 0, 0, 2);
+    }
+
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+      border: none;
+
+      @media #{$phone} {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    &.double-wide {
+      flex-grow: 2;
+    }
+  }
+}
+
+.footer-secondary {
+  background: #1b1c1e;
+  @include rems(padding, 2, 0);
+
+  .container {
+    display: flex;
+
+    @media #{$phone} {
+      flex-wrap: wrap;
+    }
+  }
+
+  .quality-care {
+    @include rems(height, 4);
+    @include rems(max-width, 13);
+    width: 100%;
+    background: url('images/quality-care@2x.png') left center no-repeat;
+    background-size: contain;
+    text-indent: -10000px;
+    display: block;
+
+    @media #{$phone} {
+      @include rems(margin-bottom, 1);
+    }
+  }
+
+  .socials {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    @media #{$phone} {
+      margin-left: 0;
+      flex-direction: row-reverse;
+    }
+
+    li {
+      background: none;
+      padding-left: 0;
+      @include rems(margin, 0, 2, 0, 0);
+
+      i {
+        @include font-size(2, 2.4);
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        @media #{$phone} {
+          @include rems(margin-right, 2);
+        }
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}

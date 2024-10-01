@@ -1,0 +1,73 @@
+.page-sections {
+  & > * {
+    &:nth-child(odd) {
+      background: #fff;
+    }
+  }
+}
+
+.page-subsection {
+  .container {
+    display: flex;
+
+    @media #{$phone} {
+      display: block;
+    }
+  }
+
+  .subsection-content {
+    width: calc(75% - 80px);
+    width: calc(75% - 8rem);
+    @include rems(margin-right, 8);
+
+    @media #{$phone} {
+      width: 100%;
+      @include rems(margin, 0, 0, 2);
+    }
+  }
+
+  .subsection-sidebar {
+    width: 25%;
+
+    @media #{$phone} {
+      width: 100%;
+    }
+  }
+}
+
+.page-main {
+  @include rems(margin-top, -8);
+  position: relative;
+  z-index: 1;
+
+  @media #{$phone} {
+    @include rems(margin-top, -4);
+  }
+
+  .container {
+    display: flex;
+
+    @media #{$phone} {
+      display: block;
+    }
+  }
+
+  .page {
+    width: calc(80% - 4rem);
+    @include rems(margin-right, 4);
+
+    @media #{$phone} {
+      width: 100%;
+    }
+  }
+
+  .page-sidebar {
+    width: 20%;
+    @include rems(padding-top, 12);
+
+    @media #{$phone} {
+      width: 100%;
+      @include rems(padding-top, 4);
+    }
+  }
+}

@@ -1,0 +1,68 @@
+body {
+	font-family: $regular;
+  @include font-size(1.6, 2.4);
+  color: $body;
+  background: #ebebeb;
+  -webkit-text-size-adjust: none;
+}
+
+.container {
+	@include rems(max-width, 140);
+	@include clearfix;
+
+	&.main {
+		@include rems(padding, 4, 0);
+	}
+
+  &.ultra {
+    @include rems(padding, 8, 0);
+
+    @media #{$phone} {
+      @include rems(padding, 2, 0);
+    }
+  }
+
+  &.no-top {
+    padding-top: 0;
+  }
+
+  &.narrow {
+    @include rems(max-width, 100);
+  }
+}
+
+.page-content {
+	position: relative;
+	min-height: 100%;
+}
+
+.acf-map {
+	@include rems(height, 40);
+}
+
+img {
+	&.alignright, &.alignleft {
+		display: block;
+		@include rems(margin-bottom, 2);
+	}
+
+	&.alignright {
+		float: right;
+		@include rems(margin-left, 2);
+	}
+
+	&.alignleft {
+		float: left;
+		@include rems(margin-right, 2);
+	}
+
+	&.aligncenter {
+		margin: 0 auto;
+		@include rems(margin-bottom, 2);
+		display: block;
+	}
+}
+
+a {
+  color: $primary;
+}
