@@ -39,12 +39,19 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6T1YZ83E2"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16707580611"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-E6T1YZ83E2');
+    gtag('config', 'AW-16707580611');
+  </script>
+  <script>
+    gtag('config', 'AW-16707580611/yyKUCPKq-NUZEMPl5Z4-', { 
+      'phone_conversion_number': '0808 1753980' 
+    }); 
   </script>
 
 	<?php wp_footer(); ?>
